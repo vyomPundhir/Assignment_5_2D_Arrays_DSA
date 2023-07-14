@@ -20,7 +20,7 @@ The first group of n=2 elements in original, [1,2], becomes the first row in the
 
 The second group of n=2 elements in original, [3,4], becomes the second row in the constructed 2D array.
 
-**Solution 3:**
+**Solution 1:**
 
 ```javascript
 function construct2DArray(original, m, n) {
@@ -64,6 +64,7 @@ Example 1:
 
 **Explanation:** Because the 3rd row is incomplete, we return 2.
 
+**Solution 2:**
 ```javascript
 function arrangeCoins(n) {
   let left = 1;
@@ -100,6 +101,7 @@ Q3. Given an integer array nums sorted in **non-decreasing** order, return *an a
 
 After sorting, it becomes [0,1,9,16,100].
 
+**Solution 3:**
 ```javascript
 function square(nums) {
 	let count = 0;
@@ -137,6 +139,7 @@ For nums1, nums1[1] = 2 is present at index 0 of nums2, whereas nums1[0] = 1 and
 
 For nums2, nums2[0] = 2 is present at index 1 of nums1, whereas nums2[1] = 4 and nums2[2] = 6 are not present in nums2. Therefore, answer[1] = [4,6]. 
 
+**Solution 4:**
 ```javascript
 function findMissingDistinct(nums1, nums2) {
   const set1 = new Set();
